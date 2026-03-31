@@ -49,4 +49,9 @@ public class PatientService {
 
         return patientMapper.toResponseDTO(patientRepository.save(patient));
     }
+
+    public void deletePatient(UUID id) {
+        patientRepository.deleteById(id);
+    }
+
 }
