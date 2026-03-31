@@ -23,6 +23,6 @@ jobs:
           cache: 'maven'
 
       - name: Build Patient Service
-        run: mvn clean install -pl patient-service
+        run: mvn clean install patient-service
 
 
